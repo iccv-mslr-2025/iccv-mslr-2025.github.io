@@ -1,0 +1,202 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@media screen and (min-width: 64em)
+{
+.project-name {
+    font-size: 2.75rem;
+}
+}
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Body styles */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #FFD580; /* Sand gold */
+  color: #264653; /* Dark blue for better contrast on yellow */
+}
+
+/* Header styles */
+header {
+    background-image: url('/img/header.jpg'); /* Add your Hawaii-themed image */
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Palette colors */
+a {
+    color: #4DB8FF; /* Aqua blue */
+}
+
+a:hover {
+    color: #66CC99; /* Palm green */
+}
+
+/* Button styles */
+button {
+    background-color: #4DB8FF; /* Aqua blue */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #66CC99; /* Palm green */
+}
+
+// Background images per singolo header di pagina
+body.page-index .page-header {
+  background-image: url('/img/index.jpg');
+  background-size: cover;
+  position: relative;
+}
+body.page-dates .page-header {
+  background-image: url('/img/dates.jpg');
+  background-size: cover;
+  position: relative;
+}
+body.page-workshop .page-header {
+  background-image: url('/img/workshop.jpg');
+  background-size: cover;
+  position: relative;
+}
+body.page-challenge .page-header {
+  background-image: url('/img/challenge.webp');
+  background-size: cover;
+  position: relative;
+}
+body.page-program .page-header {
+  background-image: url('/img/program.webp');
+  background-size: cover;
+  position: relative;
+}
+body.page-talks .page-header {
+  background-image: url('/img/talks.webp');
+  background-size: cover;
+  position: relative;
+}
+body.page-organizers .page-header {
+  background-image: url('/img/organizers.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+}
+.headshot {
+    width: 85px;
+    height: 85px;
+    background-color: grey;
+    border-radius: 50%;
+}
+.name {
+    font-family: 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color:#966;
+}
+.affiliation {
+    font-family: 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
+    display: block;
+    font-size:14px;
+    font-weight: 300;
+}
+
+div.speaker .cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*vertical-align: top;
+    text-align: center;
+    width: 110px;*/
+}
+
+div.speaker img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+div.speakers .details .name {
+    font-family: 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color:#966;
+}
+div.speaker .details .affiliation {
+    font-family: 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
+    display: block;
+    font-size:14px;
+    font-weight: 300;
+}
+
+.page-header {
+    position: relative;
+}
+
+.page-header .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+   z-index: 1;
+}
+
+.page-header a, .page-header h1, .page-header h2, .page-header h3 {
+   color: white;
+   position: relative;
+   z-index : 3;
+}
+
+.footer-logos .logo + .logo {
+  margin-top: 20px; /* Aggiunge spazio tra i due loghi */
+}
+
+.project-tagline {
+   opacity: 1;
+}
+
+// styling header sponsors
+.sponsors-banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  img {
+    max-height: 80px;
+    margin: 0 1rem;
+  }
+}
+
+// styling footer sponsors
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  img {
+    max-height: 80px;  // tutte le icone avranno la stessa altezza
+    margin: 0 1rem;
+  }
+}
